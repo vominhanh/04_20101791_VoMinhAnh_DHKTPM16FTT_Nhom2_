@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-xs-12">
+            <img src="IMG/HEADER.PNG" alt="" width="100%">
+        </div>
+
+        <div class="col-xs-12">
+            <nav class="navbar navbar-expand-sm  justify-content-xl-start">
+                <ul class="navbar nav">
+                    <li class="navbar-item"><a class="navbar-link" href="#" style="margin-right: 20px;" id="btn1">Đặng Nhập</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="btn2">Đăng Ký</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-xs-12">
+            <p style="text-align: center;margin-top: 20px;font-size: 40px;">DANH SÁCH ĐỘI TUYỂN VIỆT NAM</p>
+            <table class="table table-striped" role="table" id="danhSach">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ Tên</th>
+                    <th>Số Áo</th>
+                    <th>Câu lạc bộ</th>
+                    <th>Ngày Tập Trung</th>
+                    <th>Điện Thoại</th>
+                    <th>Ảnh Đại Diện</th>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="col-xs-12">
+                <p style="text-align: center;">SVTH: 20101791...Lớp: DHKTPM16FTT </p>
+            </div>
+        </footer>
+        <div class="modal fade" role="dialog" id="myModal">
+            <div class="modal-dialog" style="margin-top: 10px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-center">THÔNG TIN CÁ NHÂN</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                            <label form="Name" class="control-label col-xs-3">Họ Tên</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="Name" class="form-control" placeholder="Nhập họ tên">
+                                <span class="text-danger" id="tbName">*</span>
+                            </div>
+                            <label for="Ao" class="control-label col-xs-3">Số Áo</label>
+                            <div class="col-xs-9" style="margin-bottom: 10px;">
+                                <input type="text" id="Ao" class="form-control" placeholder="Nhập số áo đội tuyển">
+                                <span class="text-danger" style="color: red;" id="tbAo">*</span>
+                            </div>
+                            <label for="CLB" class="control-label col-xs-3">Câu Lạc Bộ</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="CLB" class="form-control" placeholder="Câu lạc bộ của bạn">
+                                <span class="text-danger" style="color: red;" id="tbCLB">*</span>
+                            </div>
+                            <label for="NTT" class="control-label col-xs-3">Ngày Tập Trung</label>
+                            <div class="col-xs-9">
+                                <input type="date" id="NTT" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbNTT">*</span>
+                            </div>
+                            <label for="SDT" class="control-label col-xs-3">Số Điện Thoại</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="SDT" class="form-control" placeholder="0xxx-xxx-xxx">
+                                <span class="text-danger" style="color: red;" id="tbSDT">*</span>
+                            </div>
+                            <label for="ADD" class="control-label col-xs-3">Ảnh Đại Diện</label>
+                            <div class="col-xs-9">
+                                <input type="file" id="ADD" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbAdd">*</span>
+                            </div>
+                            <button class="btn btn-success btn-group-justified" id="Save" type="button" style="color: white; background-color: green; width: 100%;"> 
+                                Lưu
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
